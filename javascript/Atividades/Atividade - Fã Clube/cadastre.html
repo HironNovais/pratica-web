@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/site.css">
+    <title>Document</title>
+</head>
+<body>
+    <img style="height: 200px; margin-left: 38%; " src="imgs/iron-man-tony.jpg">
+    <header>
+        <h1 class="titulo_main">IRON MAN</h1>
+
+        <nav>
+            <!--A tag <a> cria um hiperlink para outro arquivo(local), outro site(externo) ou algum local da própria página(interno)
+            a tag <div> define uma divisão ou seção em uma página HTML, o elemento <div> é frequentemente utilizado como container
+            para outros elementos-->
+            <a href="index.html"><div class="opcao">Início</div></a>
+            <a href="armaduras.html"><div class="opcao">Armaduras</div></a>
+            <a href="cadastre.html"><div class="opcao">Faça Parte do Fã clube</div></a>
+            <!-- A tag section define uma seção dos conteúdos de uma página-->
+        </nav>
+    </header>
+    
+    <section style="justify-items: center;">
+        <br><br>
+        <h2>Faça parte do Clube!</h2>
+        <p style="margin-left: 10px;">Preencha o formulário para ajudar o clube!</p>
+        
+        <form name="frmfaleconosco" method="get" action="https://www.marvel.com/characters/iron-man-tony-stark" target="_blank">
+            <fieldset class="faleConosco">
+                <legend>Dados pessoais:</legend>
+                <label for="id_nome">Nome</label>
+                <input type="text" name="txtnome" id="id_nome">
+                <br>
+                <label for="id_fone">Telefone</label>
+                <input type="tel" name="txtfone" id="id_fone">
+                <br>
+                <label for="id_email">Email</label>
+                <input type="email" name="txtemail" id="id_email">
+                <br>
+                <button type="reset">Limpar</button><button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+        
+    </section>
+    <footer>Copyright &copy; MARVEL STUDIOS 2025</footer>
+        <!-- A tag <footer> define a criação do rodapé-->
+</body>
+</html>

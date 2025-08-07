@@ -1,0 +1,4 @@
+<!---Desenvolva uma  aplicação web que peça ao usuário para digitar dois números quaisquer, em seguida
+pergunte qual operação deseja realizar, exiba mensagem da operação escolhida, os números digitados
+e o resultado da operação (soma, subtração, multiplicação divisão), se o resultado é par ou ímpar.
+-->

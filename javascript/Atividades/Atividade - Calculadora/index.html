@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/stiript.js"></script>
+    <title>Document</title>
+    <!---Desenvolva uma  aplicação web que peça ao usuário para digitar dois números quaisquer, em seguida
+pergunte qual operação deseja realizar, exiba mensagem da operação escolhida, os números digitados
+e o resultado da operação (soma, subtração, multiplicação divisão), se o resultado é par ou ímpar.
+-->
+</head>
+<body>
+    <section>
+        <h1>
+            Calculadora
+        </h1>
+        <form name="frm_dados" action="#" method="get" onsubmit="return procFormulario()">
+            <!--<fieldset>-->
+                <legend>Entrada de dados</legend><br>
+                <label for="num1">Primeiro número:</label>
+                <input type="number" name="txtnum1" id="num1" required><br><br>
+                <label for="num2">Segundo número:</label>
+                <input type="number" name="txtnum2" id="num2" required>
+                <br><br>
+                <label for="operacao">Digite a operação</label>
+                <input class="valida_operador" type="text" name="ope" id="operacao" pattern="^[+\-*/]$" required><br>
+                <div class="btnformater">
+                    <button type="reset">Limpar</button><button type="submit">Enviar</button>
+                </div>
+            <!--</fieldset>-->
+        </form>
+    </section>
+</body>
+</html>
