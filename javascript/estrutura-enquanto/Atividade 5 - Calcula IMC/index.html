@@ -8,19 +8,20 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- Faça um programa que peça ao usuário dois números. Após, enquanto ele não digitar 
-o resultado correto da soma desses dois números, mostre na tela “tente novamente”, 
-quando acertar “resultado correto!”. -->
-    <font face="arial"><h2>Atividade 4 - Informe a soma</h2>
+    <!-- A academia de ginástica “SÓENGORDA LTDA.” necessita de uma solução que 
+calcule e informe o IMC (Indice de Massa Corpórea) de uma pessoa, considerando: 
+IMC = Peso / Altura * Altura. Permita que este programa seja executado quantas vezes 
+o usuário desejar.. -->
+    <font face="arial"><h2>Atividade 5 - Calcula IMC</h2>
         <section>
-            <form name="frmCalculo" action="#" method="get" onsubmit="return procDados()">
+            <form name="frmCalculo" id="frmCalculoID" action="#" method="get" onsubmit="return calculaIMC()">
                 <fieldset class="cadinteiro">
-                    <legend>Informe os dados</legend>
-                    <label>Valor 1</label>
-                    <input type="text" name="campoVal1" id="inptVal1">
-                    <label>Valor 2</label>
-                    <input type="text" name="campoVal2" id="inptVal2">
-                    <button type="reset">limpar</button><button type="submit">Enviar</button>
+                    <!--<legend>Informe os dados</legend>
+                    <label>Peso</label>
+                    <input type="text" name="namePeso" id="inptPeso">
+                    <label>Altura</label>
+                    <input type="text" name="nameAltura" id="inptAltura">
+                    <button type="reset">limpar</button>--><button type="submit">Enviar</button>
                 </fieldset>
             </form>
         </section>

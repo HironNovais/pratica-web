@@ -29,7 +29,8 @@ section{
 
 .cadinteiro button{
     width: 30%;
-    margin: 0 10%;
+    /*margin: 0 10%;*/
+    margin-left: 105px;
     background-color: #2e2e2e;
     font-weight: bold;
     font-size: 16px;
