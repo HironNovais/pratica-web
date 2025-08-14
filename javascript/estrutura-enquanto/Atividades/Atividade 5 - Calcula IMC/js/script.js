@@ -9,7 +9,7 @@ function calculaIMC(){
         console.log("_____________________________________")
         peso = parseFloat(prompt("Digite o seu peso: "))
         altura = parseFloat(prompt("Digite a sua altura: "))
-        imc = (peso / (altura * altura)).toFixed(2)
+        imc = peso / (altura * altura)
         console.log("Seu IMC é: "+imc+"!")
         continuar = window.confirm("Deseja realizar outro calculo de IMC?")
         //if(prompt("Deseja fazer outro calculo? Digite 1 para sim 0 para não: ")==0){ continuar = false }
