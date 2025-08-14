@@ -1,0 +1,28 @@
+body{
+    margin: 0px;
+    background-color: rgb(80, 46, 46);
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+.mae{
+    background-color: aliceblue;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.Classe_1{
+    background-color: red;
+    padding: 10px;
+    border-radius: 10px;
+}
+.Classe_2{
+    background-color: green;
+    padding: 10px;
+    border-radius: 10px;
+}
+.Classe_3{
+    background-color: blue;
+    padding: 10px;
+    border-radius: 10px;
+}
