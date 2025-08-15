@@ -1,6 +1,6 @@
 body{
     margin: 0px;
-    background-color: rgb(80, 46, 46);
+    background-color: rgb(61, 71, 85);
     color: aliceblue;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 700;
@@ -15,14 +15,20 @@ body{
     background-color: red;
     padding: 10px;
     border-radius: 10px;
+    width: 100vh;
+    text-align: center;
 }
 .Classe_2{
     background-color: green;
     padding: 10px;
     border-radius: 10px;
+    width: 100vh;
+    text-align: center;
 }
 .Classe_3{
     background-color: blue;
     padding: 10px;
     border-radius: 10px;
+    width: 100vh;
+    text-align: center;
 }
