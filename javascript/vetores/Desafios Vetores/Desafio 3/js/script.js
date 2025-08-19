@@ -1,20 +1,21 @@
 function procFormulario(){
     console.clear()
-    let arr = []
+    let arr = [], continuar = true
     let i = 0
 
-    while(arr.length < 10){
-        //arr[i] = parseFloat(Math.random() * 10).toFixed(2)
-        //console.log("Posição: "+i+" Valor: "+arr[i])
+    while(arr.length < 5){
         arr[i] = parseFloat(prompt("Digite um número para adicionar ao vetor!"))
         i++
     }
-    console.log('')
-    for(i=0; i<arr.length; i++){
+    console.log(arr)
+    while(continuar){
         
-        if(i%2 == 1){
-            console.log("Valor na posição: "+i+" do array "+arr[i])
-        }
+        let valor
+        valor = parseFloat(prompt("Digite um número para multiplicar os valores digitados: "))
+
+        
+        if(valor==1000){ continuar = false }
     }
+    
     return false;
 }
