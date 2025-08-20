@@ -1,6 +1,6 @@
 function procFormulario(){
     console.clear()
-    let arr = [], continuar = true
+    let arr = [], resultado = [], continuar = true
     let i = 0
 
     while(arr.length < 5){
@@ -9,12 +9,17 @@ function procFormulario(){
     }
     console.log(arr)
     while(continuar){
-        
         let valor
-        valor = parseFloat(prompt("Digite um número para multiplicar os valores digitados: "))
-
-        
-        if(valor==1000){ continuar = false }
+        valor = parseFloat(prompt("Digite um número para multiplicar os valores digitados ou digite 0 para sair: "))
+     
+        console.log(resultado)
+        if(valor==0){ 
+            continuar = false
+        }else{
+            for(let i=0; i<5; i++){
+                resultado[i] = arr[i] * valor
+            }
+        }
     }
     
     return false;
