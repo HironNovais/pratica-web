@@ -1,30 +1,27 @@
 function procFormulario(){
-    /*Atividade 1-Alimentar uma matriz (3x3) de valores inteiros, multiplicando essa matriz por um
-        valor informado pelo usuário e escrevendo o conteúdo da matriz multiplicada.*/
+    /*Desafio 1
+    O síndico do prédio “Balança mais não cai” solicitou uma solução que armazene em 
+    uma matriz a renda de cada família moradora de um edifício, calculando a média e o 
+    total de renda do mesmo. O prédio possui 6 andares e quatro apartamentos por 
+    andar.*/
     console.clear()
-    let matriz = [], matrizOriginal = []
+    let renda = [], media=0, total=0, cont=0
     let i = 0
 
-    for(let i=0; i<3; i++){
-        matrizOriginal[i] = []
-        for(let c=0; c<3; c++){
-            matrizOriginal[i][c] = parseInt(prompt("Digite o valor da linha: "+(i+1)+" Coluna: "+(c+1)+":"))
+    for(let i=0; i<6; i++){
+        renda[i] = []
+        for(let c=0; c<4; c++){
+            renda[i][c] = parseInt(prompt("Digite o valor da renda da familia no andar: "+(i+1)+" Apartamento: "+(c+1)+":"))
+            media += renda[i][c]
+            total += renda[i][c]
+            cont++
         }
     }
-    console.log("Matriz original")
-    console.log(matrizOriginal)
-    let val = parseInt(prompt("Digite um valor para multiplicar o valor inicial da matriz: "))
-    
-    for(let i=0; i<3; i++){
-        matriz[i] = []
-        for(let c=0; c<3; c++){
-            matriz[i][c] = matrizOriginal[i][c] * val
-        }
-    }
-    console.log("Matriz Multiplicada")
-    console.log(matriz)
 
-    
+    console.log("Renda de individual de cada apartamento do prédio")
+    console.log(renda)
+    console.log("Média de renda do prédio: "+(media/cont))
+    console.log("Renda Total de todos os moradores: "+total)    
     
     return false;
 }
