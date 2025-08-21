@@ -11,18 +11,25 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- Desafio2
-
-    A empresa “Só soma Ltda.” necessita de uma solução que leia uma matriz 4x3 de 
-    números reais e mostre a soma de seus elementos.-->
+    <!-- Desafio Extra Supermercado.-->
     <section>
         <font face = "Poppins">
-            <h2>Só soma</h2>
-            <form name="frmnotas" action="#" method="get" onsubmit="return procFormulario()">
+            <h2>Supermercado</h2>
+            <form name="frmnotas" action="#" method="get" onsubmit="return enviaDados(event)">
                 <fieldset class="cadmedialuno1">
-                    <legend>Entrada de dados</legend><br>
-                    
-                    <button type="reset">Limpar</button><button type="submit">Enviar</button>
+                    <button type="submit" >Registrar Compras Por Cliente</button>
+                </fieldset>
+            </form>
+
+            <form name="frmnotas" action="#" method="get" onsubmit="return consultaCliente(event)">
+                <fieldset class="cadmedialuno1">
+                    <button type="submit">Consultar Cliente</button>
+                </fieldset>
+            </form>
+
+            <form name="frmnotas" action="#" method="get" onsubmit="return listaCompras(event)">
+                <fieldset class="cadmedialuno1">
+                    <button type="submit">Listar Todas as Compras</button>
                 </fieldset>
             </form>
         </font>
