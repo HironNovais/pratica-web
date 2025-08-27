@@ -12,9 +12,14 @@
     <script src="js/main.js"></script>
 </head>
 <body>
-    
+    <center>
+    <section>
+        
+            <h1>ESTRUTURAS LÓGICAS</h1>
+            <p>Este site visa demonstrar as principais estruturas lógicas utilizadas em Javascript, 
+                que ajudam no desenvolvimento lógico inicial de programação</p>
+    </section>
     <section class="estruturas_condicionais">
-        <br><br>
         <h2>Estruturas Condicionais</h2>
         <table>
             <thead>
@@ -22,9 +27,9 @@
                     <th colspan="3" style="background-color: rgb(255, 49, 49);">IF</th>
                 </tr>
                 <tr>
-                    <th style="width: 150px;">Nome Atividade</th>
-                    <th>Descrição</th>
-                    <th style="width:150px;">Código</th>
+                    <th style="width: 150px; background-color: rgb(255, 109, 77);">Nome Atividade</th>
+                    <th style="background-color: rgb(255, 109, 77);">Descrição</th>
+                    <th style="width:150px; background-color: rgb(255, 109, 77);">Código</th>
                 </tr>
             </thead>
             <tbody>
@@ -34,58 +39,227 @@
                         calcule a sua média e de acordo com a mesma emita a situação do aluna, aprovado > 7, recup > 5 < 6.9,
                         reprovado < 4.9
                     </td>
-                    <td style="text-align: center; cursor: pointer; font-weight: 700;" id="estruturas_condicionais_atv_1">Visualizar</td>
+                    <td class="btn-acao" id="estruturas_condicionais_if_atv_1">Visualizar</td>
                 </tr>
                 <tr>
-                    <td>MARK 3</td>
-                    <td>Homem de Ferro</td>
+                    <td style="text-align: center;">Atividade 2</td>
+                    <td>Desenvolva uma aplicação web em que o usuário digite 2 números inteiros e informe se o número 1 é maior, menor ou igual o número 2</td>
+                    <td class="btn-acao" id="estruturas_condicionais_if_atv_2">Visualizar</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="3" style="background-color: rgb(255, 49, 49);">SWITCH CASE</th>
                 </tr>
                 <tr>
-                    <td>MARK 4</td>
-                    <td>Homem de Ferro 2</td>
+                    <th style="width: 150px; background-color: rgb(255, 109, 77);">Nome Atividade</th>
+                    <th style="background-color: rgb(255, 109, 77);">Descrição</th>
+                    <th style="width:150px; background-color: rgb(255, 109, 77);">Código</th>
                 </tr>
+            </thead>
+            <tbody>
                 <tr>
-                    <td>MARK 5</td>
-                    <td>Homem de Ferro 2</td>
-                </tr>
-                <tr>
-                    <td>MARK 6</td>
-                    <td>Homem de Ferro 2</td>
-                </tr>
-
-                <tr>
-                    <td>MARK 7</td>
-                    <td>Os Vingadores</td>
-                </tr>
-                <tr>
-                    <td>MARK 43</td>
-                    <td>Vingadores - Era de Ultron</td>
-                </tr>
-                <tr>
-                    <td>MARK 44 HULK BUSTER</td>
-                    <td>Vingadores - Era de Ultron</td>
-                </tr>
-                <tr>
-                    <td>MARK 45</td>
-                    <td>Vingadores - Era de Ultron</td>
-                </tr>
-                <tr>
-                    <td>MARK 46</td>
-                    <td>Capitão América - Guerra Civil</td>
-                </tr>
-                <tr>
-                    <td>MARK 50</td>
-                    <td>Vingadores Guerra Infinita</td>
-                </tr>
-                <tr>
-                    <td>MARK 85</td>
-                    <td>Vingadores Ultimato</td>
+                    <td style="text-align: center;">Atividade 1</td>
+                    <td>Desenvolva uma aplicação web em que dado dois números e um operador o usuário possa calculor o resultado
+                    </td>
+                    <td class="btn-acao" id="estruturas_condicionais_switch_atv_1">Visualizar</td>
                 </tr>
             </tbody>
         </table>
         <br>
     </section>
-    <footer>Copyright &copy; MARVEL STUDIOS 2025</footer>
+    <!-- Estruturas de Repetição -->
+    <br>
+    <section class="estruturas_repeticao">
+        <h2>Estruturas de Repetição</h2>
+        <!-- FOR -->
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="3" style="background-color: rgb(141, 170, 0);">FOR</th>
+                </tr>
+                <tr>
+                    <th style="width: 150px; background-color: rgb(211, 227, 133);">Nome Atividade</th>
+                    <th style="background-color: rgb(211, 227, 133);">Descrição</th>
+                    <th style="width:150px; background-color: rgb(211, 227, 133);">Código</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="text-align: center;">Exemplo</td>
+                    <td>Desenvolva uma rotina que conte de 10 a 1 e imprima cada loop no console.</td>
+                    <td class="btn-acao" id="estruturas_repeticao_for_exemplo">Visualizar</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">Atividade 1</td>
+                    <td>Desenvolva uma aplicação em que o usuário digite um número e recebe a tabuada de 1 a 10 desse número.</td>
+                    <td class="btn-acao" id="estruturas_repeticao_for_atv_1">Visualizar</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <!-- WHILE -->
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="3" style="background-color: rgb(141, 170, 0);">WHILE</th>
+                </tr>
+                <tr>
+                    <th style="width: 150px; background-color: rgb(211, 227, 133);">Nome Atividade</th>
+                    <th style="background-color: rgb(211, 227, 133);">Descrição</th>
+                    <th style="width:150px; background-color: rgb(211, 227, 133);">Código</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="text-align: center;">Atividade 1</td>
+                    <td>Desenvolva uma rotina contadora que mostrará os valores pares de 1 a 11</td>
+                    <td class="btn-acao" id="estruturas_repeticao_while_exemplo">Visualizar</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">Atividade 1</td>
+                    <td>Desenvolva uma rotina que solicite 3 valores ao usuário e some esses valores enquanto o contador não atingir o valor necessário para sair do loop, em cada passagem deve ser mostrado a posição e a soma atual</td>
+                    <td class="btn-acao" id="estruturas_repeticao_while_atv_1">Visualizar</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">Atividade 2</td> <!-- Atividade 4 na lista do estrutura enquanto-->
+                    <td>Desenvolva uma aplicação em que o usuário digita dois números inteiros e depois ele tem que acertar a soma desses valores. Enquanto ele não acertar não sair do loop.
+                    </td>
+                    <td class="btn-acao" id="estruturas_repeticao_while_atv_2">Visualizar</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">Atividade 3</td>
+                    <td>Desenvolva um algoritmo que peça o peso e altura do usuário para calcular o IMC, após isso, ele pode inserir novos valores ou sair da rotina.
+                    </td>
+                    <td class="btn-acao" id="estruturas_repeticao_while_atv_3">Visualizar</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">Atividade 4</td>
+                    <td>Desenvolva um algoritmo que peça a idade, o gênero e o salário de um grupo de pessoas. Quando o usuário quiser sair e encerrar o programa, ele deve digitar “Finalizar”.</td>
+                    <td class="btn-acao" id="estruturas_repeticao_while_atv_4">Visualizar</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- DO WHILE -->
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="3" style="background-color: rgb(141, 170, 0);">WHILE</th>
+                </tr>
+                <tr>
+                    <th style="width: 150px; background-color: rgb(211, 227, 133);">Nome Atividade</th>
+                    <th style="background-color: rgb(211, 227, 133);">Descrição</th>
+                    <th style="width:150px; background-color: rgb(211, 227, 133);">Código</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="text-align: center;">Exemplo</td>
+                    <td>Desenvolva uma rotina que mostra uma contagem enquanto o valor do contador ser diferente de 11</td>
+                    <td class="btn-acao" id="estruturas_repeticao_do_while_exemplo">Visualizar</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">Atividade 1</td>
+                    <td>Desenvolva uma rotina que somará todos os valores digitados pelo cliente até ele digitar 0</td>
+                    <td class="btn-acao" id="estruturas_repeticao_do_while_atv_1">Visualizar</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">Atividade 2</td>
+                    <td>Desenvolva uma aplicação em que o usuário digita um número e retorne a tabuada desse número.
+                    </td>
+                    <td class="btn-acao" id="estruturas_repeticao_do_while_atv_2">Visualizar</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+    </section>
+    <!-- VETORES E VETORES COM VETORES DENTRO -->
+    <section class="estruturas_dimencionais">
+        <h2>Estruturas Dimencionais</h2>
+        <!-- VETOR -ARRAY -->
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="3" style="background-color: rgb(0, 151, 178);">VETORES</th>
+                </tr>
+                <tr>
+                    <th style="width: 150px; background-color: rgb(92, 225, 230);">Nome Atividade</th>
+                    <th style="background-color: rgb(92, 225, 230);">Descrição</th>
+                    <th style="width:150px; background-color: rgb(92, 225, 230);">Código</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="text-align: center;">Exemplo</td>
+                    <td>Desenvolva uma rotina que solicite ao usuário valores inteiros e a cada loop mostre o valor digitado na posíção atual do Vetor, após preencher, mostre o vetor.</td>
+                    <td class="btn-acao" id="estruturas_dimencionais_vetor_exemplo">Visualizar</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">Atividade 1</td>
+                    <td>Desenvolva uma rotina que solicite as notas dos alunos armazenando-as em um vetor, após isso, mostre as notas acima de 7.4.</td>
+                    <td class="btn-acao" id="estruturas_dimencionais_vetor_atv_1">Visualizar</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">Atividade 2</td>
+                    <td>Desenvolva uma rotina que solicite as notas dos alunos armazenando-as em um vetor, após isso, mostre as notas acima de 7.4 e a quantidade de notas acima desse valor.</td>
+                    <td class="btn-acao" id="estruturas_dimencionais_vetor_atv_2">Visualizar</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">Atividade 3</td>
+                    <td>Desenvolva uma rotina que armazene em um vetor o quadrado da variável contadora.</td>
+                    <td class="btn-acao" id="estruturas_dimencionais_vetor_atv_3">Visualizar</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">Atividade 4</td>
+                    <td>Desenvolva uma rotina que solicite 10 números e depois mostre os valores que estão nas posições impares do vetor.</td>
+                    <td class="btn-acao" id="estruturas_dimencionais_vetor_atv_4">Visualizar</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <!-- MATRIZES -->
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="3" style="background-color: rgb(0, 151, 178);">MATRIZES</th>
+                </tr>
+                <tr>
+                    <th style="width: 150px; background-color: rgb(92, 225, 230);">Nome Atividade</th>
+                    <th style="background-color: rgb(92, 225, 230);">Descrição</th>
+                    <th style="width:150px; background-color: rgb(92, 225, 230);">Código</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="text-align: center;">Atividade 1</td>
+                    <td>  Desenvolva uma rotina que alimente uma matriz (3x3) de valores inteiros, multiplicando essa matriz por um
+                        valor informado pelo usuário e escrevendo o conteúdo da matriz multiplicada.</td>
+                    <td class="btn-acao" id="estruturas_decimencionais_matriz_atv_1">Visualizar</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">Atividade 2</td>
+                    <td>Construa um algoritmo para ler uma matriz (2x2) de inteiros e imprimir a soma dos elementos de uma linha fornecida pelo usuário.</td>
+                    <td class="btn-acao" id="estruturas_decimencionais_matriz_atv_2">Visualizar</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">Atividade 3</td>
+                    <td>Crie uma matriz (2x2) onde o valor de cada elemento dentro da matriz é a soma dos índices da sua posição</td>
+                    <td class="btn-acao" id="estruturas_repeticao_while_atv_3">Visualizar</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">Atividade 4</td>
+                    <td>Desenvolva um algoritmo para o usuário alimentar e imprimir os dados de uma matriz 2x3</td>
+                    <td class="btn-acao" id="estruturas_repeticao_while_atv_4">Visualizar</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+    </section>
+</center>
+    <footer>Copyright &copy; Hiron 2025</footer>
         <!-- A tag <footer> define a criação do rodapé-->
 </body>
 </html>

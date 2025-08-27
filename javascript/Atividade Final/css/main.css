@@ -1,29 +1,49 @@
 @charset "UTF-8";
-
+/*TAGs Padrões*/
 body{
     margin: 0 auto;
-    background-color: rgb(124, 124, 124);
-    font-family: poppins;;
+    background-color: rgb(211, 211, 211);
+    font-family: 'Poppins';
 }
-.estruturas_condicionais{
-    background-color: rgba(255, 0, 0, 0.500);
-    justify-items: center;
+table tbody tr td{
+    background-color: rgb(228, 228, 228);
 }
-.estruturas_condicionais button{
-    border: none;
+h1{
+    font-size: 50px;
 }
-
-.estruturas_condicionais table{
+p{
+    font-weight: 700;
+    width: 500px;
+}
+table{
     background-color: aliceblue;
     border: none;
-    width: 90%;
+    width: 95%;
     overflow-x: auto;
 }
-
-.estruturas_condicionais table tr{
-    background-color: rgb(225, 109, 77);
+section{
+    width: 100%;
 }
 
-.estruturas_condicionais table tbody tr td{
-    background-color: rgb(228, 228, 228);
+.btn-acao{
+    text-align: center;
+    cursor: pointer;
+    font-weight: 700; 
+}
+/*Estrutura de Condicionais*/
+.estruturas_condicionais{
+    /*background-color: rgba(255, 0, 0, 0.336);
+    padding-top: 5px;*/
+    
+}
+
+/*Estrutura de Repetição*/
+.estruturas_repeticao{
+    /*background-color: rgba(0, 255, 0, 0.336);
+    padding-top: 5px;*/
+}
+
+.estruturas_dimencionais{
+    /*background-color: rgba(120, 158, 209);
+    padding-top: 5px;*/
 }
