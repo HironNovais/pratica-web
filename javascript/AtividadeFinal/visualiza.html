@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualização Código</title>
+    <link rel="stylesheet" type="text/css" href="CSS/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/visualiza.js"></script>
+</head>
+<body>
+    <center>
+        <div style="background-color: rgb(255, 109, 77);"><h1 id="nomeAtividade">TITULO H1</h1></div>
+        <div style="background-color: rgb(211, 227, 133);"><h2 id="descricaoAtividade"></h2></div>
+        <div id="codigo" style="background-color: rgb(92, 225, 230); text-align: start;"></div>
+        <form>
+            
+            <textarea name="fonte" id="codigo" style="display: none;"></textarea>
+            <input type="button" value="Testar sua página" onclick="document.write(fonte.value);">
+        </form>
+    </center>
+</body>
+</html>

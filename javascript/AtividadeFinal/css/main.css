@@ -47,3 +47,10 @@ section{
     /*background-color: rgba(120, 158, 209);
     padding-top: 5px;*/
 }
+.ocultaCodigo{
+    display: none;
+}
+
+textarea {
+    white-space: wrap;
+}
