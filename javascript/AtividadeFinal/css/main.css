@@ -2,7 +2,8 @@
 /*TAGs Padrões*/
 body{
     margin: 0 auto;
-    background-color: rgb(211, 211, 211);
+    background-color: #181818;
+    color: #FFFFFF;
     font-family: 'Poppins';
 }
 table tbody tr td{
@@ -20,6 +21,7 @@ table{
     border: none;
     width: 95%;
     overflow-x: auto;
+    color: black;
 }
 section{
     width: 100%;
@@ -29,6 +31,12 @@ section{
     text-align: center;
     cursor: pointer;
     font-weight: 700; 
+}
+.titulo_atv{
+    background-color: #673AB7;
+}
+.desc_atv{
+    background-color: #FF5722;
 }
 /*Estrutura de Condicionais*/
 .estruturas_condicionais{
