@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualização Código</title>
+    <link rel="stylesheet" type="text/css" href="CSS/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/visualiza.js"></script>
+</head>
+<body>
+    <center>
+        <div class="titulo_atv"><h1 id="nomeAtividade"></h1></div>
+        <div class="desc_atv"><h3 id="descricaoAtividade"></h3></div>
+        
+        <form style="width: 80%; height: 500px;">
+            <textarea name="fonte" id="txtcodigo" style="width: 80%; height: 400px; resize: none; margin-top: 10px;">
+                <!DOCTYPE html>
+                <html lang="pt-br">
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        
+                        <title>Atividade 1 - IF</title>        
+                    <style>
+                        body{
+                                background-color: rgb(128, 76, 76);
+                        }
+                        section{
+                                margin-top: 0px auto;
+                        }
+                
+                        .cadmedialuno1{
+                                background-color: goldenrod;
+                                width: 300px;
+                                margin: 0px auto;
+                                font-weight: bold;
+                                margin-bottom: 10px;
+                        }
+                        .cadmedialuno1{
+                                width: 300px;
+                                margin: 0px auto;
+                                font-weight: bold;
+                                margin-bottom: 10px;
+                        }
+                
+                        .cadmedialuno1 input{
+                                width: 100%;
+                                margin: 5px auto;
+                                padding: 5px 0;
+                        }
+                
+                        .cadmedialuno1 button{
+                                width: 30%;
+                                margin: 0 10%;
+                                background-color: #b1ccf5;
+                                font-weight: bold;
+                                font-size: 16px;
+                        }
+                
+                        /**/
+                        .comparaNum{
+                                background-color: rgb(32, 218, 128);
+                                width: 300px;
+                                margin: 0px auto;
+                                font-weight: bold;
+                                margin-bottom: 10px;
+                        }
+                        .comparaNum{
+                                width: 300px;
+                                margin: 0px auto;
+                                font-weight: bold;
+                                margin-bottom: 10px;
+                        }
+                
+                        .comparaNum input{
+                                width: 100%;
+                                margin: 5px auto;
+                                padding: 5px 0;
+                        }
+                
+                        .comparaNum button{
+                                width: 30%;
+                                margin: 0 10%;
+                                background-color: #b1ccf5;
+                                font-weight: bold;
+                                font-size: 16px;
+                        }
+                
+                        label{
+                                float: left;
+                        }
+                        h2{
+                            text-align: center;
+                            margin-top: 0px;
+                            margin-bottom: 10px;
+                                font-size: 50px;
+                        }
+                    </style>
+                    </head>
+                    <body>
+                        <!-- Desenvolva uma aplicação web que, a partir de 3 notas de um aluno, informadas pelo usuário
+                        calcule a sua média e de acordo com a mesma emita a situação do aluna, aprovado > 7, recup > 5 < 6.9,
+                        reprovado < 4.9-->
+                
+                        <section>
+                            <h2>Atividade - Cálculo média de aluno - Estrutura condicional "Se"(if)</h2>
+                            <font face = "arial">
+                                <form name="frmnotas" action="#" method="get" onsubmit="return procFormulario()">
+                                    <fieldset class="cadmedialuno1">
+                                        <legend>Entrada de dados</legend><br>
+                                        <label for="num1">Nota 01</label>
+                                        <input type="text" name="txtnum1" id="num1"><br><br>
+                                        <label for="num2">Nota 02</label>
+                                        <input type="text" name="txtnum2" id="num2"><br><br>
+                                        <label for="num3">Nota 03</label>
+                                        <input type="text" name="txtnum3" id="num3"><br>
+                                        <button type="reset">Limpar</button><button type="submit">Enviar</button>
+                                    </fieldset>
+                                </form>
+                            </font>
+                        </section>
+                    </body>
+                    <script>
+                    function procFormulario(){
+                        //alert("Estou na função");
+                        let num1, num2, num3, media
+                
+                        if(document.frmnotas.txtnum1.value==""){
+                            alert("Preenchar o campo nota 01");
+                            document.frmnotas.textnum1.focus();
+                
+                            return false;
+                        }else if(document.frmnotas.txtnum2.value==""){
+                            alert("Preenchar o campo nota 02");
+                            document.frmnotas.textnum2.focus();
+                
+                            return false;
+                        }else if(document.frmnotas.txtnum3.value==""){
+                            alert("Preenchar o campo nota 03");
+                            document.frmnotas.textnum3.focus();
+                
+                            return false;
+                        }else{
+                            num1 = parseFloat(document.getElementById("num1").value);
+                            num2 = parseFloat(document.getElementById("num2").value);
+                            num3 = parseFloat(document.getElementById("num3").value);
+                            media = (num1+num2+num3) / 3;
+                            
+                            if(media>=7){
+                                alert("Aprovado: "+media.toFixed(2)+" Você foi aprovado!");
+                            }else if(media<7 &  media>5){
+                                alert("Recuperação: "+media.toFixed(2)+" Você está em recuperação!");
+                            }else{
+                                alert("Reprovado jamelão, média: "+media.toFixed(2));
+                            }
+                        }
+                    }
+                    </script>
+                </html></textarea><br>
+            <input type="button" value="Testar sua página" onclick="document.write(fonte.value);">
+        </form>
+    </center>
+</body>
+</html>

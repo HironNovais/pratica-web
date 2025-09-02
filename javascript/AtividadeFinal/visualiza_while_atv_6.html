@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualização Código</title>
+    <link rel="stylesheet" type="text/css" href="CSS/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/visualiza.js"></script>
+</head>
+<body>
+    <center>
+        <div class="titulo_atv"><h1 id="nomeAtividade"></h1></div>
+        <div class="desc_atv"><h3 id="descricaoAtividade"></h3></div>
+        
+        <form style="width: 80%; height: 500px;">
+            <textarea name="fonte" id="txtcodigo" style="width: 80%; height: 400px; resize: none; margin-top: 10px;">
+                <!DOCTYPE html>
+                <html lang="pt-br">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Atividade 6 - While</title>
+                    <style>
+                        body{
+                            background-color: rgb(82, 82, 82);
+                        }
+                        section{
+                            margin-top: 0px auto;
+                        }
+
+                        .cadinteiro{
+                            background-color: rgb(213, 247, 252);
+                            width: 300px;
+                            margin: 0px auto;
+                            font-weight: bold;
+                            margin-bottom: 10px;
+                            border: none;
+                            padding: 10px;
+                        }
+                        .cadinteiro{
+                            width: 300px;
+                            margin: 0px auto;
+                            font-weight: bold;
+                            margin-bottom: 10px;
+                        }
+
+                        .cadinteiro input{
+                            width: 100%;
+                            margin: 5px auto;
+                            padding: 5px 0;
+                        }
+
+                        .cadinteiro button{
+                            width: 30%;
+                            /*margin: 0 10%;*/
+                            margin-left: 105px;
+                            background-color: #2e2e2e;
+                            font-weight: bold;
+                            font-size: 16px;
+                            border: none;
+                            border-radius: 5px;
+                            color: white;
+                            cursor:pointer;
+                        }
+
+                        /**/
+                        .comparaNum{
+                            background-color: rgb(32, 218, 128);
+                            width: 300px;
+                            margin: 0px auto;
+                            font-weight: bold;
+                            margin-bottom: 10px;
+                        }
+                        .comparaNum{
+                            width: 300px;
+                            margin: 0px auto;
+                            font-weight: bold;
+                            margin-bottom: 10px;
+                        }
+
+                        .comparaNum input{
+                            width: 100%;
+                            margin: 5px auto;
+                            padding: 5px 0;
+                        }
+
+                        .comparaNum button{
+                            width: 30%;
+                            margin: 0 10%;
+                            background-color: #b1ccf5;
+                            font-weight: bold;
+                            font-size: 16px;
+                        }
+
+                        label{
+                            float: left;
+                        }
+                        h2{
+                            text-align: center;
+                            margin-top: 0px;
+                            margin-bottom: 10px;
+                            font-size: 50px;
+                        }
+                    </style>
+                </head>
+                <body>
+                        <!-- Você criará um algoritmo que peça a idade, o gênero e o salário de um grupo de 
+                    pessoas. Quando o usuário quiser sair e encerrar o programa, ele deve digitar 
+                    “Finalizar”. Não se esqueça de validar para que o usuário digite exatamente 
+                    “Finalizar”. Ao final, você deve apresentar ao usuário:
+
+                    ● A média de salário do grupo;
+                    ● A média de todas as idades;
+                    ● A média de salário do gênero feminino;
+                    ● A média de salário do gênero masculino.
+                    -->
+                    <font face="arial"><h2>Atividade 6 - Médias do Grupo</h2>
+                        <section>
+                            <form name="frmCalculo" action="#" method="get" onsubmit="return procDados()">
+                                <fieldset class="cadinteiro">
+                                    <button type="submit">Enviar</button>
+                                </fieldset>
+                            </form>
+                        </section>
+                    </font>
+                    <script>
+                        function procDados(){
+
+                            let qtd=0, idade=0, genero='', qtd_fem=0, qtd_masc=0, salarioF=0, salarioM=0, continuar=''
+                            console.clear()
+                            while(continuar!='Finalizar'){
+                                qtd++
+                                idade += parseInt(prompt("Digite sua idade: "))
+                                if(prompt("Digite seu genero, 'M' para Masculino 'F' para Feminino: ").toLocaleLowerCase()=='m'){
+                                    qtd_masc++
+                                    salarioM += parseFloat(prompt("Digite seu salário: "))
+                                }else{
+                                    qtd_fem++
+                                    salarioF += parseFloat(prompt("Digite seu salário: "))
+                                }
+
+                                continuar = prompt("Desajar continuar a inserção de dados? Digite 'S' para continuar e 'Finalizar' para sair e verificar o resultado")
+                            }
+
+                            console.log("Média de salário do grupo: "+((salarioM+salarioF) / qtd))
+                            console.log("Média de todas as idades: "+(idade / qtd))
+                            console.log("Média salárial Feminina: "+(salarioF / qtd_fem))
+                            console.log("Média salárial Masculina: "+(salarioM / qtd_masc))
+
+                            return false;
+                        }
+                    </script>
+                </body>
+                </html>
+            </textarea><br>
+            <input type="button" value="Testar sua página" onclick="document.write(fonte.value);">
+        </form>
+    </center>
+</body>
+</html>

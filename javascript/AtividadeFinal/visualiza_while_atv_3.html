@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualização Código</title>
+    <link rel="stylesheet" type="text/css" href="CSS/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/visualiza.js"></script>
+</head>
+<body>
+    <center>
+        <div class="titulo_atv"><h1 id="nomeAtividade"></h1></div>
+        <div class="desc_atv"><h3 id="descricaoAtividade"></h3></div>
+        
+        <form style="width: 80%; height: 500px;">
+            <textarea name="fonte" id="txtcodigo" style="width: 80%; height: 400px; resize: none; margin-top: 10px;">
+                <!DOCTYPE html>
+                <html lang="pt-br">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Atividade 3 - While</title>
+                    <style>
+                        body{
+                            background-color: rgb(43, 53, 73);
+                        }
+                        section{
+                            margin-top: 0px auto;
+                        }
+
+                        .cadinteiro{
+                            background-color: goldenrod;
+                            width: 300px;
+                            margin: 0px auto;
+                            font-weight: bold;
+                            margin-bottom: 10px;
+                        }
+                        .cadinteiro{
+                            width: 300px;
+                            margin: 0px auto;
+                            font-weight: bold;
+                            margin-bottom: 10px;
+                        }
+
+                        .cadinteiro input{
+                            width: 100%;
+                            margin: 5px auto;
+                            padding: 5px 0;
+                        }
+
+                        .cadinteiro button{
+                            width: 30%;
+                            margin: 0 10%;
+                            background-color: #b1ccf5;
+                            font-weight: bold;
+                            font-size: 16px;
+                        }
+
+                        /**/
+                        .comparaNum{
+                            background-color: rgb(32, 218, 128);
+                            width: 300px;
+                            margin: 0px auto;
+                            font-weight: bold;
+                            margin-bottom: 10px;
+                        }
+                        .comparaNum{
+                            width: 300px;
+                            margin: 0px auto;
+                            font-weight: bold;
+                            margin-bottom: 10px;
+                        }
+
+                        .comparaNum input{
+                            width: 100%;
+                            margin: 5px auto;
+                            padding: 5px 0;
+                        }
+
+                        .comparaNum button{
+                            width: 30%;
+                            margin: 0 10%;
+                            background-color: #b1ccf5;
+                            font-weight: bold;
+                            font-size: 16px;
+                        }
+
+                        label{
+                            float: left;
+                        }
+                        h2{
+                            text-align: center;
+                            margin-top: 0px;
+                            margin-bottom: 10px;
+                            font-size: 50px;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <font face="arial"><h2>Atividade 3 - Informe 3 números inteiros e mostre a soma dos que são divisiveis por 5</h2>
+                        <section>
+                            <form name="frmTabuada" action="#" method="get" onsubmit="return procDados()">
+                                <fieldset class="cadinteiro">
+                                    <legend>Informe os dados</legend>
+                                    <label>Valor 1</label>
+                                    <input type="text" name="campoVal1" id="inptVal1">
+                                    <label>Valor 2</label>
+                                    <input type="text" name="campoVal2" id="inptVal2">
+                                    <label>Valor 3</label>
+                                    <input type="text" name="campoVal3" id="inptVal3">
+                                    <button type="reset">limpar</button><button type="submit">Enviar</button>
+                                </fieldset>
+                            </form>
+                        </section>
+                    </font>
+                    <script>
+                        function procDados(){
+                            let soma=0
+                            console.clear()
+                            v1 = parseInt(document.getElementById("inptVal1").value)
+                            v2 = parseInt(document.getElementById("inptVal2").value)
+                            v3 = parseInt(document.getElementById("inptVal3").value)
+
+                            if(v1%5==0 & v1 > 0){soma+=v1}
+                            if(v2%5==0 & v2 > 0){soma+=v2}
+                            if(v3%5==0 & v3 > 0){soma+=v3}
+
+                            console.log("Soma dos valores: "+soma)
+
+                            return false;
+                        }
+                    </script>
+                </body>
+                </html>
+            </textarea><br>
+            <input type="button" value="Testar sua página" onclick="document.write(fonte.value);">
+        </form>
+    </center>
+</body>
+</html>

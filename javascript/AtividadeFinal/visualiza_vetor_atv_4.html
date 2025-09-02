@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atividade 4 - Vetores</title>
+        <style>
+            body{
+                background-color: rgb(128, 76, 76);
+            }
+            section{
+                margin-top: 0px auto;
+            }
+
+            .cadmedialuno1{
+                background-color: goldenrod;
+                width: 300px;
+                margin: 0px auto;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+            .cadmedialuno1{
+                width: 300px;
+                margin: 0px auto;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+
+            .cadmedialuno1 input{
+                width: 100%;
+                margin: 5px auto;
+                padding: 5px 0;
+            }
+
+            .cadmedialuno1 button{
+                width: 30%;
+                margin: 0 10%;
+                background-color: #b1ccf5;
+                font-weight: bold;
+                font-size: 16px;
+            }
+
+            /**/
+            .comparaNum{
+                background-color: rgb(32, 218, 128);
+                width: 300px;
+                margin: 0px auto;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+            .comparaNum{
+                width: 300px;
+                margin: 0px auto;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+
+            .comparaNum input{
+                width: 100%;
+                margin: 5px auto;
+                padding: 5px 0;
+            }
+
+            .comparaNum button{
+                width: 30%;
+                margin: 0 10%;
+                background-color: #b1ccf5;
+                font-weight: bold;
+                font-size: 16px;
+            }
+
+            label{
+                float: left;
+            }
+            h2{
+                text-align: center;
+                margin-top: 0px;
+                margin-bottom: 10px;
+                font-size: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Faça um vetor com 10 números reais e depois exibir os números nas posições impares-->
+        <section>
+            <font face = "Poppins">
+                <h2>Mostre os números na posição impar de um vetor de 10 posições</h2>
+                <form name="frmnotas" action="#" method="get" onsubmit="return procFormulario()">
+                    <fieldset class="cadmedialuno1">
+                        <legend>Entrada de dados</legend><br>
+                        
+                        <button type="submit">Enviar</button>
+                    </fieldset>
+                </form>
+            </font>
+        </section>
+        <script>
+            function procFormulario(){
+                console.clear()
+                let arr = []
+                let i = 0
+
+                while(arr.length < 10){
+                    //arr[i] = parseFloat(Math.random() * 10).toFixed(2)
+                    //console.log("Posição: "+i+" Valor: "+arr[i])
+                    arr[i] = parseFloat(prompt("Digite um número para adicionar ao vetor!"))
+                    i++
+                }
+                console.log('')
+                for(i=0; i<arr.length; i++){
+                    
+                    if(i%2 == 1){
+                        console.log("Valor na posição: "+i+" do array "+arr[i])
+                    }
+                }
+                return false;
+            }
+        </script>
+    </body>
+</html>

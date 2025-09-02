@@ -30,35 +30,37 @@ section{
 .btn-acao{
     text-align: center;
     cursor: pointer;
-    font-weight: 700; 
+    font-weight: 700;
+}
+.btn-acao:hover{
+    transition: 400ms;
+    background-color: #673AB7;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+
 }
 .titulo_atv{
     background-color: #673AB7;
+    font-size: larger;
+    COLOR: white;
 }
 .desc_atv{
     background-color: #FF5722;
 }
-/*Estrutura de Condicionais*/
-.estruturas_condicionais{
-    /*background-color: rgba(255, 0, 0, 0.336);
-    padding-top: 5px;*/
-    
-}
 
-/*Estrutura de Repetição*/
-.estruturas_repeticao{
-    /*background-color: rgba(0, 255, 0, 0.336);
-    padding-top: 5px;*/
-}
-
-.estruturas_dimencionais{
-    /*background-color: rgba(120, 158, 209);
-    padding-top: 5px;*/
-}
 .ocultaCodigo{
     display: none;
 }
 
 textarea {
     white-space: wrap;
+    background-color: #9c9c9c;
+    border: solid 3px;
+    border-color: #673AB7;
 }
