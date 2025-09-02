@@ -35,11 +35,12 @@ section{
 .btn-acao:hover{
     transition: 400ms;
     background-color: #673AB7;
-    padding-left: 30px;
-    padding-right: 30px;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 a{
-    text-decoration: none;
+    /*text-decoration: none;*/
     color: black;
 }
 
@@ -73,6 +74,7 @@ textarea {
     text-decoration: none;  
     color: #ffffff;
     border-radius:50px;
+    font-size:large
 } 
      
 .flutuante {  

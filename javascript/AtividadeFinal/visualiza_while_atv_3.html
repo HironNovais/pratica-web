@@ -26,14 +26,14 @@
                     <title>Atividade 3 - While</title>
                     <style>
                         body{
-                            background-color: rgb(43, 53, 73);
+                            background-color: #444444;
                         }
                         section{
                             margin-top: 0px auto;
                         }
 
                         .cadinteiro{
-                            background-color: goldenrod;
+                            background-color: rgb(163, 163, 163);
                             width: 300px;
                             margin: 0px auto;
                             font-weight: bold;
@@ -97,10 +97,41 @@
                             margin-top: 0px;
                             margin-bottom: 10px;
                             font-size: 50px;
+                            color: #FF5722;
                         }
+                        .botao {  
+                            cursor: pointer;
+                            display: inline-block;
+                            margin-top: 5px;
+                            margin-left: 5px;
+                            padding: 10px;    
+                            background-color: #FF5722;
+                            text-decoration: none;  
+                            color: #ffffff;
+                            border-radius:50px;
+                        } 
+                            
+                        .flutuante {  
+                        display: inline-block;  
+                        -webkit-transition-duration: 0.4s;  
+                        transition-duration: 0.4s;  
+                        -webkit-transition-property: -webkit-transform;  
+                        transition-property: transform;  
+                        -webkit-transform: translateZ(0);  
+                        -ms-transform: translateZ(0);  
+                        transform: translateZ(0);  
+                        box-shadow: 0px 4px 2px 0px #3c1480;
+                        }  
+                        .flutuante:hover {  
+                        -webkit-transform: translateY(-5px);  
+                        -ms-transform: translateY(-5px);  
+                        transform: translateY(-5px);
+                        box-shadow: 0px 2px 2px 0px #673AB7;  
+                        } 
                     </style>
                 </head>
                 <body>
+                    <input type="button" class="botao flutuante" value="Voltar" onclick="voltarCodigo();">
                     <font face="arial"><h2>Atividade 3 - Informe 3 números inteiros e mostre a soma dos que são divisiveis por 5</h2>
                         <section>
                             <form name="frmTabuada" action="#" method="get" onsubmit="return procDados()">
@@ -137,7 +168,8 @@
                 </body>
                 </html>
             </textarea><br>
-            <input type="button" value="Testar sua página" onclick="document.write(fonte.value);">
+            <input type="button" class="botao flutuante" value="Voltar ao Menu" onclick="voltar();">
+            <input type="button" class="botao flutuante"  value="Testar sua página" onclick="document.write(fonte.value);">
         </form>
     </center>
 </body>

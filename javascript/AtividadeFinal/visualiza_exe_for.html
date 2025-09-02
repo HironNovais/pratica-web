@@ -12,7 +12,7 @@
     <script src="js/visualiza.js"></script>
 </head>
 <body>
-    <a href="index.html" class="botao flutuante">← Voltar</a> 
+    
     <center>
         <div class="titulo_atv"><h1 id="nomeAtividade"></h1></div>
         <div class="desc_atv"><h3 id="descricaoAtividade"></h3></div>
@@ -28,14 +28,14 @@
                         <title>Estrutura-Se</title>
                         <style>
                             body{
-                                background-color: rgb(43, 53, 73);
+                                background-color: #444444;
                             }
                             section{
                                 margin-top: 0px auto;
                             }
 
                             .cadinteiro{
-                                background-color: goldenrod;
+                                background-color: rgb(163, 163, 163);
                                 width: 300px;
                                 margin: 0px auto;
                                 font-weight: bold;
@@ -99,13 +99,14 @@
                                 margin-top: 0px;
                                 margin-bottom: 10px;
                                 font-size: 50px;
+                                color: #FF5722;
                             }
                             .botao {  
                                 cursor: pointer;
                                 display: inline-block;
                                 margin-top: 5px;
                                 margin-left: 5px;
-                                padding: 0.4em 0.6em;    
+                                padding: 10px;    
                                 background-color: #FF5722;
                                 text-decoration: none;  
                                 color: #ffffff;
@@ -134,6 +135,7 @@
                     <body>
                         <!-- Desenvolva uma aplicação web que a partir de um número informado pelo usuário, gere uma tabuada deste número, com o respectivo resultado,
                         até o 10, exemplo, número informado-->
+                        <input type="button" class="botao flutuante" value="Voltar" onclick="voltarCodigo();"> 
                         <section>
                             <h2>Exemplo - Exibe números inteiros - estrutura "Para"</h2>
                             <font face = "arial">
@@ -161,7 +163,8 @@
                     </body>
                 </html>
             </textarea><br>
-            <input type="button" class="botao flutuante" value="Testar sua página" onclick="document.write(fonte.value);">
+            <input type="button" class="botao flutuante" value="Voltar ao Menu" onclick="voltar();">
+            <input type="button" class="botao flutuante"  value="Testar sua página" onclick="document.write(fonte.value);">
         </form>
     </center>
 </body>
