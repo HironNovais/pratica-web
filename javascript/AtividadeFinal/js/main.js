@@ -1,7 +1,7 @@
 $( document ).ready(function() {
     
     $(".btn-acao").click( function(event){
-        let link_completo
+        let link_completo=""
         let btn_clicado = $(this).attr("id"); // Pegar o btn clicado
 
         let row = $(this).closest("tr");

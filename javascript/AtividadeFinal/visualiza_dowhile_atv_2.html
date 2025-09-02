@@ -12,6 +12,7 @@
     <script src="js/visualiza.js"></script>
 </head>
 <body>
+    <a href="index.html" class="botao flutuante">← Voltar</a> 
     <center>
         <div class="titulo_atv"><h1 id="nomeAtividade"></h1></div>
         <div class="desc_atv"><h3 id="descricaoAtividade"></h3></div>
@@ -98,9 +99,39 @@
                             margin-bottom: 10px;
                             font-size: 50px;
                         }
+                        .botao {  
+                            cursor: pointer;
+                            display: inline-block;
+                            margin-top: 5px;
+                            margin-left: 5px;
+                            padding: 0.4em 0.6em;    
+                            background-color: #FF5722;
+                            text-decoration: none;  
+                            color: #ffffff;
+                            border-radius:50px;
+                        } 
+                            
+                        .flutuante {  
+                        display: inline-block;  
+                        -webkit-transition-duration: 0.4s;  
+                        transition-duration: 0.4s;  
+                        -webkit-transition-property: -webkit-transform;  
+                        transition-property: transform;  
+                        -webkit-transform: translateZ(0);  
+                        -ms-transform: translateZ(0);  
+                        transform: translateZ(0);  
+                        box-shadow: 0px 4px 2px 0px #3c1480;
+                        }  
+                        .flutuante:hover {  
+                        -webkit-transform: translateY(-5px);  
+                        -ms-transform: translateY(-5px);  
+                        transform: translateY(-5px);
+                        box-shadow: 0px 2px 2px 0px #673AB7;  
+                        } 
                     </style>
                 </head>
                 <body>
+                    <a href="index.html" class="botao flutuante">← Voltar</a> 
                     <font face="arial"><h2>Atividade 2 - Tabuada - Estrutura "faça enquanto"...(do - while)</h2>
                         <section>
                                 
@@ -140,7 +171,7 @@
                 </body>
                 </html>
             </textarea><br>
-            <input type="button" value="Testar sua página" onclick="document.write(fonte.value);">
+            <input type="button" class="botao flutuante" value="Testar sua página" onclick="document.write(fonte.value);">
         </form>
     </center>
 </body>
