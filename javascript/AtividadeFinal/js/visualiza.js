@@ -1,6 +1,6 @@
 $( document ).ready(function() {
-    document.getElementById("nomeAtividade").innerText = localStorage.getItem("nomeAtividade");
-    document.getElementById("descricaoAtividade").innerText = localStorage.getItem("descricaoAtividade");
+    document.getElementById("nomeAtividade").innerText = localStorage.getItem("nomeAtividade")//+' - '+ localStorage.getItem("estrutura");
+    document.getElementById("descricaoAtividade").innerText = localStorage.getItem("descricaoAtividade") 
     //document.getElementById("link").innerText = localStorage.getItem("link");    
 })
 

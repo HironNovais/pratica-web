@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="CSS/site.css">
+    <script src="js/main.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -26,17 +27,17 @@
         <h2>Fale conosco!</h2>
         <p>Ficou com alguma dúvida? Preencha este formulário bonito e entraremos em contato!</p>
         
-        <form name="frmfaleconosco" method="get" action="#">
+        <form name="frmfaleconosco" method="get" action="#" onsubmit="return envioFaleConosco()">
             <fieldset class="faleConosco">
                 <legend>Dados pessoais:</legend>
                 <label for="id_nome">Nome</label>
                 <input type="text" name="txtnome" id="id_nome">
                 <br>
                 <label for="id_fone">Telefone</label>
-                <input type="tel" name="txtfone" id="id_fone">
+                <input type="text" name="txtfone" id="id_fone" placeholder="(99)99999-9999">
                 <br>
                 <label for="id_email">Email</label>
-                <input type="email" name="txtemail" id="id_email">
+                <input type="text" name="txtemail" id="id_email" placeholder="fulano@mail.com">
             </fieldset>
             <fieldset class="faleConosco">
                 <legend>Motivo do contato:</legend>              
@@ -50,7 +51,7 @@
                 <br>
                 <label for="texto_motivo">Motivo</label>
                 <textarea name="txacomentario" id="ipmotivo"></textarea>
-                    <button type="reset">Limpar</button><button type="submit">Enviar</button>
+                <button type="reset">Limpar</button><button type="submit" onClick()>Enviar</button>
                     
             </fieldset>
 

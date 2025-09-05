@@ -14,6 +14,7 @@ $( document ).ready(function() {
         localStorage.setItem("nomeAtividade", nomeAtividade);
         localStorage.setItem("descricaoAtividade", descricao);
         localStorage.setItem("link", link_completo)
+        //localStorage.setItem("estrutura", document.getElementById("tipo_estrutura").innerText)
 
         window.open(link_completo, '_self')
         //location.replace(link_completo)
